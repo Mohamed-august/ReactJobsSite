@@ -64,21 +64,21 @@
     };
 
     return (
-        <section className="bg-indigo-50">
+        <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900">
         <div className="container m-auto max-w-2xl py-24">
-            <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
+            <div className="text-white bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
             <form onSubmit={submitForm}>
-                <h2 className="text-3xl text-center font-semibold mb-6">Add Job</h2>
+                <h2 className="text-3xl text-center text-white font-semibold mb-6">Add Job</h2>
 
                 {/* Job Type */}
                 <div className="mb-4">
-                <label htmlFor="type" className="block text-gray-700 font-bold mb-2">
+                <label htmlFor="type" className="text-white block font-bold mb-2">
                     Job Type
                 </label>
                 <select
                     id="type"
                     name="type"
-                    className="border rounded w-full py-2 px-3"
+                    className="border rounded w-full py-2 px-3 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900"
                     required
                     value={type}
                     onChange={(e) => setType(e.target.value)}
@@ -92,14 +92,14 @@
 
                 {/* Job Title */}
                 <div className="mb-4">
-                <label className="block text-gray-700 font-bold mb-2">
+                <label className="text-white block font-bold mb-2">
                     Job Listing Name
                 </label>
                 <input
                     type="text"
                     id="title"
                     name="title"
-                    className="border rounded w-full py-2 px-3 mb-2"
+                    className="border rounded w-full py-2 px-3 mb-2 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900"
                     placeholder="eg. Frontend Developer"
                     required
                     value={title}
@@ -109,13 +109,13 @@
 
                 {/* Job Description */}
                 <div className="mb-4">
-                <label htmlFor="description" className="block text-gray-700 font-bold mb-2">
+                <label htmlFor="description" className="text-white block font-bold mb-2">
                     Description
                 </label>
                 <textarea
                     id="description"
                     name="description"
-                    className="border rounded w-full py-2 px-3"
+                    className="border rounded w-full py-2 px-3 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900"
                     rows="4"
                     placeholder="Add job duties, expectations, requirements..."
                     value={description}
@@ -125,13 +125,13 @@
 
                 {/* Salary */}
                 <div className="mb-4">
-                <label htmlFor="salary" className="block text-gray-700 font-bold mb-2">
+                <label htmlFor="salary" className="text-white block font-bold mb-2">
                     Salary
                 </label>
                 <select
                     id="salary"
                     name="salary"
-                    className="border rounded w-full py-2 px-3"
+                    className="border rounded w-full py-2 px-3 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900"
                     required
                     value={salary}
                     onChange={(e) => setSalary(e.target.value)}
@@ -152,12 +152,12 @@
 
                 {/* Location */}
                 <div className="mb-4">
-                <label className="block text-gray-700 font-bold mb-2">Location</label>
+                <label className="text-white block font-bold mb-2">Location</label>
                 <input
                     type="text"
                     id="location"
                     name="location"
-                    className="border rounded w-full py-2 px-3 mb-2"
+                    className="border rounded w-full py-2 px-3 mb-2 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900"
                     placeholder="Company Location"
                     required
                     value={location}
@@ -169,14 +169,14 @@
                 <h3 className="text-2xl mb-5">Company Info</h3>
 
                 <div className="mb-4">
-                <label htmlFor="company" className="block text-gray-700 font-bold mb-2">
+                <label htmlFor="company" className="text-white block font-bold mb-2">
                     Company Name
                 </label>
                 <input
                     type="text"
                     id="company"
                     name="company"
-                    className="border rounded w-full py-2 px-3"
+                    className="border rounded w-full py-2 px-3 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900"
                     placeholder="Company Name"
                     value={companyName}
                     onChange={(e) => setCompanyName(e.target.value)}
@@ -184,13 +184,13 @@
                 </div>
 
                 <div className="mb-4">
-                <label htmlFor="company_description" className="block text-gray-700 font-bold mb-2">
+                <label htmlFor="company_description" className="text-white block font-bold mb-2">
                     Company Description
                 </label>
                 <textarea
                     id="company_description"
                     name="company_description"
-                    className="border rounded w-full py-2 px-3"
+                    className="border rounded w-full py-2 px-3 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900"
                     rows="4"
                     placeholder="What does your company do?"
                     value={companyDescription}
@@ -199,14 +199,14 @@
                 </div>
 
                 <div className="mb-4">
-                <label htmlFor="contact_email" className="block text-gray-700 font-bold mb-2">
+                <label htmlFor="contact_email" className="text-white block font-bold mb-2">
                     Contact Email
                 </label>
                 <input
                     type="email"
                     id="contact_email"
                     name="contact_email"
-                    className="border rounded w-full py-2 px-3"
+                    className="border rounded w-full py-2 px-3 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900"
                     placeholder="Email address for applicants"
                     required
                     value={companyEmail}
@@ -215,14 +215,14 @@
                 </div>
 
                 <div className="mb-4">
-                <label htmlFor="contact_phone" className="block text-gray-700 font-bold mb-2">
+                <label htmlFor="contact_phone" className="text-white block font-bold mb-2">
                     Contact Phone
                 </label>
                 <input
                     type="tel"
                     id="contact_phone"
                     name="contact_phone"
-                    className="border rounded w-full py-2 px-3"
+                    className="border rounded w-full py-2 px-3 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900"
                     placeholder="Optional phone for applicants"
                     value={companyPhone}
                     onChange={(e) => setCompanyPhone(e.target.value)}
@@ -232,7 +232,7 @@
                 {/* Submit Button */}
                 <div>
                 <button
-                    className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
+                    className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
                     type="submit"
                 >
                     Add Job
