@@ -34,6 +34,3 @@ This course has been instrumental in solidifying my React foundation and has equ
 📌 Looking Ahead
 
 I'm excited to continue exploring React's ecosystem, including state management libraries like Redux and routing with React Router, to further enhance my development skills.
-
----
-There is a remark that when you install the zip file you should manually delete node modules and install it again using npm install as my project node modules were built on wsl not powershell
