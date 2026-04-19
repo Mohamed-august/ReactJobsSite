@@ -26,31 +26,31 @@
         };
 
     return (
-        <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900">
+        <section className="bg-indigo-50">
         <div className="container m-auto py-10">
-            <div className="shadow-md rounded-md p-6 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900">
-            <h1 className="text-3xl font-bold mb-4 text-white">{job.title}</h1>
-            <p className="text-white mb-2">
-                <span className="font-semibold text-white">Type:</span> {job.type}
+            <div className="bg-white shadow-md rounded-md p-6">
+            <h1 className="text-3xl font-bold mb-4">{job.title}</h1>
+            <p className="text-gray-700 mb-2">
+                <span className="font-semibold">Type:</span> {job.type}
             </p>
-            <p className="text-white mb-2">
+            <p className="text-gray-700 mb-2">
                 <span className="font-semibold">Salary:</span> {job.salary}
             </p>
-            <p className="text-white mb-4">
+            <p className="text-gray-700 mb-4">
                 <span className="font-semibold">Location:</span> {job.location}
             </p>
 
-            <h2 className="text-xl text-white font-semibold mb-2">Description</h2>
-            <p className="mb-4 text-white">{job.description}</p>
+            <h2 className="text-xl font-semibold mb-2">Description</h2>
+            <p className="mb-4">{job.description}</p>
 
-            <h2 className="text-xl font-semibold text-white mb-2">Company</h2>
-            <p className="mb-1 font-semibold text-white">{job.company.name}</p>
-            <p className="mb-1 text-white">{job.company.description}</p>
-            <p className="mb-1 text-sm text-white">
+            <h2 className="text-xl font-semibold mb-2">Company</h2>
+            <p className="mb-1 font-semibold">{job.company.name}</p>
+            <p className="mb-1">{job.company.description}</p>
+            <p className="mb-1 text-sm text-gray-600">
                 📧 {job.company.contactEmail}
             </p>
             {job.company.contactPhone && (
-                <p className="mb-4 text-sm text-white">
+                <p className="mb-4 text-sm text-gray-600">
                 📞 {job.company.contactPhone}
                 </p>
             )}
@@ -59,19 +59,19 @@
             <div className="flex gap-4 mt-6">
                 <button
                 onClick={() => navigate(`/edit-job/${job.id}`)}
-                className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white font-bold py-2 px-4 rounded-full"
+                className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full"
                 >
                 Edit
                 </button>
                 <button
                 onClick={handleDelete}
-                className="bg-gradient-to-br from-slate-950 via-red-950 to-slate-900 text-white font-bold py-2 px-4 rounded-full"
+                className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full"
                 >
                 Delete
                 </button>
                 <button
                 onClick={() => navigate("/jobs")}
-                className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white font-bold py-2 px-4 rounded-full"
+                className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full"
                 >
                 Back to Jobs
                 </button>
