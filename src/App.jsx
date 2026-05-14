@@ -22,7 +22,7 @@ const App = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await fetch("/jobs.json");
+        const res = await fetch(`${import.meta.env.BASE_URL}jobs.json`);
         const data = await res.json();
         const baseJobs = data.jobs || [];
 
@@ -117,7 +117,8 @@ const App = () => {
         />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
-    )
+    ),
+    { basename: '/ReactJobsSite/' }
   );
 
   return <RouterProvider router={router} />;
