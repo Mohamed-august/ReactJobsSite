@@ -1,4 +1,5 @@
 {
+    "homepage": "https://Mohamed-august.github.io/ReactJobsSite",
     "name": "react-project",
     "private": true,
     "version": "0.0.0",
@@ -8,7 +9,9 @@
         "build": "vite build",
         "lint": "eslint .",
         "preview": "vite preview",
-        "server": "json-server --watch public/jobs.json --port 8000"
+        "server": "json-server --watch public/jobs.json --port 8000",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "react": "^19.1.1",
